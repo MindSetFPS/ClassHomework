@@ -1,0 +1,26 @@
+//pseudocode
+
+function main()
+    tax = 1.16
+    total = 0
+    sumtax = 0
+    producttax = 0
+    semitotal = 0
+    sumsemitotal = 0
+    output "Escribe la cantidad: "
+    input quantity
+    loop while quantity > 0
+        output "Escribe el precio : "
+        input price
+        priceandtax = price * quantity * tax
+        producttax = 0.16 * price
+        sumtax = producttax + sumtax
+        semitotal = price * quantity
+        sumsemitotal = sumsemitotal + semitotal
+        total = priceandtax + total
+        output "Total: $" + total + " Subtotal: $" + sumsemitotal + " Impuestos: $" + sumtax
+        output "Escribe la cantidad: "
+        input quantity
+    end while
+    output "Total: $" + total + " Subtotal: $" + sumsemitotal + " Impuestos: $" + sumtax
+end function

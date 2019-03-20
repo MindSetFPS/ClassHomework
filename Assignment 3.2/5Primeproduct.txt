@@ -1,0 +1,21 @@
+function main()
+    contadorprimos = 200
+    
+    // se sacaran los factores primos de n
+    input n
+    output "Los factores primos son: "
+    loop i from 1 to contadorprimos
+        fact = 0
+        loop j from 1 to contadorprimos
+            if i MOD j = 0 then
+                fact = fact + 1
+            end If
+        end loop
+        if fact = 2 then
+            loop while n MOD i = 0
+                n = n / i
+                output i
+            end while
+        end If
+    end loop
+end function

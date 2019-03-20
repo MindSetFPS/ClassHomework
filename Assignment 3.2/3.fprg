@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Daniel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-12 05:51:05 a. m."/>
+        <attribute name="created" value="RGFuaWVsO0xBUFRPUC1RMkNKS01RRDsyMDE5LTAzLTEyOzA1OjI5OjU0IGEuIG0uOzMxMzE="/>
+        <attribute name="edited" value="RGFuaWVsO0xBUFRPUC1RMkNKS01RRDsyMDE5LTAzLTEyOzA1OjUxOjA1IGEuIG0uOzE7MzIzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3. Print all the multiples of k from m to n."/>
+            <declare name="k, m, n, i, output" type="Integer" array="False" size=""/>
+            <input variable="m"/>
+            <input variable="n"/>
+            <input variable="k"/>
+            <if expression="m&lt;n">
+                <then>
+                    <for variable="i" start="m" end="n" direction="inc" step="1">
+                        <assign variable="output" expression="k*i"/>
+                        <output expression="k &amp; &quot; x &quot; &amp; i &amp; &quot; = &quot; &amp; output" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="i" start="n" end="m" direction="inc" step="1">
+                        <assign variable="output" expression="k*i"/>
+                        <output expression="k &amp; &quot; x &quot; &amp; i &amp; &quot; = &quot; &amp; output" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

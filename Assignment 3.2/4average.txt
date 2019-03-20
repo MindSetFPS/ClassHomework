@@ -1,0 +1,13 @@
+function main()
+    // 4. Get the average of n exams.
+    // c = numer of exams
+    // b = grades
+    input c
+    a = 0
+    loop i from 1 to c
+        input b
+        a = a + b
+    end loop
+    a = a / c
+    output "The average is: " + a
+end function

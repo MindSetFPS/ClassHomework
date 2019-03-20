@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Daniel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-20 12:20:24 a. m."/>
+        <attribute name="created" value="RGFuaWVsO0xBUFRPUC1RMkNKS01RRDsyMDE5LTAzLTEzOzEyOjMzOjAxIGEuIG0uOzMxMTc="/>
+        <attribute name="edited" value="RGFuaWVsO0xBUFRPUC1RMkNKS01RRDsyMDE5LTAzLTIwOzEyOjIwOjI0IGEuIG0uOzU7MzIyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, primo, fact, contadorprimos, n, x" type="Integer" array="False" size=""/>
+            <declare name="numero, guardado" type="Real" array="False" size=""/>
+            <assign variable="contadorprimos" expression="200"/>
+            <comment text="se sacaran los factores primos de n"/>
+            <input variable="n"/>
+            <output expression="&quot;Los factores primos son: &quot;" newline="True"/>
+            <for variable="i" start="1" end="contadorprimos" direction="inc" step="1">
+                <assign variable="fact" expression="0"/>
+                <for variable="j" start="1" end="contadorprimos" direction="inc" step="1">
+                    <if expression="i % j = 0">
+                        <then>
+                            <assign variable="fact" expression="fact + 1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="fact = 2">
+                    <then>
+                        <while expression="n%i = 0">
+                            <assign variable="n" expression="n/i"/>
+                            <output expression="i" newline="True"/>
+                        </while>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

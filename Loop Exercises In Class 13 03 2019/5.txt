@@ -1,0 +1,26 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int i, j, k, n; 
+
+	cin >> n;
+
+	for (i = 0; i <= n; i++)
+	{
+		for ( j = 1; j <= i; j++)
+		{
+			for ( k = n; i < k; k--)
+			{
+				if (j == 1) {
+					cout << " ";
+
+				}
+			}
+			cout << i  << " ";
+		}
+		cout << "\n";
+	}
+}

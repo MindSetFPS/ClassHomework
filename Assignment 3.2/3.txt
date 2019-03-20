@@ -1,0 +1,17 @@
+function main()
+    // 3. Print all the multiples of k from m to n.
+    input m
+    input n
+    input k
+    if m < n then
+        loop i from m to n
+            var_output = k * i
+            output k + " x " + i + " = " + var_output
+        end loop
+    else
+        loop i from n to m
+            var_output = k * i
+            output k + " x " + i + " = " + var_output
+        end loop
+    end If
+end function

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Daniel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-15 10:51:03 p. m."/>
+        <attribute name="created" value="RGFuaWVsO0xBUFRPUC1RMkNKS01RRDsyMDE5LTAzLTE1OzEwOjIwOjQ0IHAuIG0uOzMxMzU="/>
+        <attribute name="edited" value="RGFuaWVsO0xBUFRPUC1RMkNKS01RRDsyMDE5LTAzLTE1OzEwOjUxOjAzIHAuIG0uOzE7MzI0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="priceandtax, price, quantity, tax, producttax, sumtax, semitotal, sumsemitotal, total" type="Real" array="False" size=""/>
+            <declare name="cobrar" type="Integer" array="False" size=""/>
+            <assign variable="tax" expression="1.16"/>
+            <assign variable="total" expression="0"/>
+            <assign variable="sumtax" expression="0"/>
+            <assign variable="producttax" expression="0"/>
+            <assign variable="semitotal" expression="0"/>
+            <assign variable="sumsemitotal" expression="0"/>
+            <output expression="&quot;Escribe la cantidad: &quot;" newline="True"/>
+            <input variable="quantity"/>
+            <while expression="quantity &gt; 0">
+                <output expression="&quot;Escribe el precio : &quot;" newline="True"/>
+                <input variable="price"/>
+                <assign variable="priceandtax" expression="price*quantity*tax"/>
+                <assign variable="producttax" expression="0.16*price"/>
+                <assign variable="sumtax" expression="producttax + sumtax"/>
+                <assign variable="semitotal" expression="price * quantity"/>
+                <assign variable="sumsemitotal" expression="sumsemitotal + semitotal"/>
+                <assign variable="total" expression="priceandtax + total"/>
+                <output expression="&quot;Total: $&quot; &amp; total &amp; &quot; Subtotal: $&quot; &amp; sumsemitotal &amp; &quot; Impuestos: $&quot; &amp; sumtax" newline="True"/>
+                <output expression="&quot;Escribe la cantidad: &quot;" newline="True"/>
+                <input variable="quantity"/>
+            </while>
+            <output expression="&quot;Total: $&quot; &amp; total &amp; &quot; Subtotal: $&quot; &amp; sumsemitotal &amp; &quot; Impuestos: $&quot; &amp; sumtax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

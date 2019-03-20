@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Daniel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-13 12:32:59 a. m."/>
+        <attribute name="created" value="RGFuaWVsO0xBUFRPUC1RMkNKS01RRDsyMDE5LTAzLTEyOzA3OjMwOjA5IHAuIG0uOzMxNDA="/>
+        <attribute name="edited" value="RGFuaWVsO0xBUFRPUC1RMkNKS01RRDsyMDE5LTAzLTEzOzEyOjMyOjU5IGEuIG0uOzE7MzIzNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hours, minutes, i, j, h" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="11" direction="inc" step="1">
+                <for variable="j" start="0" end="5" direction="inc" step="1">
+                    <for variable="h" start="0" end="9" direction="inc" step="1">
+                        <if expression="i&lt;=9">
+                            <then>
+                                <output expression="&quot;0&quot;" newline="False"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <output expression="i" newline="False"/>
+                        <output expression="&quot;:&quot;" newline="False"/>
+                        <output expression="j" newline="False"/>
+                        <output expression="h" newline="True"/>
+                    </for>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

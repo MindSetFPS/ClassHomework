@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Daniel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-12 06:10:24 a. m."/>
+        <attribute name="created" value="RGFuaWVsO0xBUFRPUC1RMkNKS01RRDsyMDE5LTAzLTEyOzA1OjUxOjE2IGEuIG0uOzMxMjQ="/>
+        <attribute name="edited" value="RGFuaWVsO0xBUFRPUC1RMkNKS01RRDsyMDE5LTAzLTEyOzA2OjEwOjI0IGEuIG0uOzE7MzIyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="4. Get the average of n exams."/>
+            <comment text="c = numer of exams&#13;&#10;"/>
+            <comment text="b = grades"/>
+            <declare name="a, b, c, i" type="Real" array="False" size=""/>
+            <input variable="c"/>
+            <assign variable="a" expression="0"/>
+            <for variable="i" start="1" end="c" direction="inc" step="1">
+                <input variable="b"/>
+                <assign variable="a" expression="a+b"/>
+            </for>
+            <assign variable="a" expression="a/c"/>
+            <output expression="&quot;The average is: &quot; &amp; a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

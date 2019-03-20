@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Daniel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-20 12:23:34 AM"/>
+        <attribute name="created" value="RGFuaWVsO0RFU0tUT1AtM1ZVVUpTRzsyMDE5LTAzLTE5OzExOjQ2OjQ0IFBNOzI5OTY="/>
+        <attribute name="edited" value="RGFuaWVsO0RFU0tUT1AtM1ZVVUpTRzsyMDE5LTAzLTIwOzEyOjIzOjM0IEFNOzE7MzA3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, n, k" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="k" expression="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <for variable="j" start="1" end="k" direction="inc" step="1">
+                    <output expression="j" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+                <assign variable="k" expression="k-1"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

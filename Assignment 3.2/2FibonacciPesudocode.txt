@@ -1,0 +1,13 @@
+function main()
+    a = 0
+    b = 1
+    c = 0
+    input d
+    output " Fibonacci Sequence until " + d
+    loop while c < d
+        c = a + b
+        output c
+        a = b
+        b = c
+    end while
+end function
